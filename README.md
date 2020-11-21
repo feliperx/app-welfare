@@ -1,11 +1,10 @@
-## app-welfare 
+# Welfare 
 
-# App para academia 
+## App para academia 
 
-- Usando React Native
+- React Native;
 
-# Ferramentas: 
+## Ferramentas: 
 
 - Expo; 
 - Emulador Android-Studio; 
-
