@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-
+import { useNavigation } from "@react-navigation/native";
 import {
   Text,
   View,
@@ -14,25 +14,11 @@ import {
 import { styles } from "./styles";
 
 export default () => {
-  const [offset] = useState(new Animated.ValueXY({ x: 0, y: 20 }));
-
-//   useEffect(() => {
-//     Animated.spring(offset.y, {
-//       toValue: 0,
-//       speed: 4,
-//     }).start();
-//   }, []);
+  const navigation = useNavigation();
 
   return (
     <KeyboardAvoidingView style={styles.background}>
-      <Animated.View
-        style={[
-          styles.containerLogo,
-          {
-            transform: [{ translateY: offset.y }]
-          }
-        ]}
-      >
+      <Animated.View style={styles.containerLogo}>
         <Image source={require("../../../public/images/logo.png")} />
       </Animated.View>
 
@@ -42,18 +28,23 @@ export default () => {
 
         <TouchableOpacity
           style={styles.buttonLogin}
-          onPress={() => alert("Login!")}
+          onPress={() => {
+            navigation.navigate("InstructorArea");
+          }}
         >
           <Text style={styles.text}>Login</Text>
         </TouchableOpacity>
         <TouchableOpacity
           style={styles.buttonSignUp}
-          onPress={() => alert("Sign Up!")}
+          onPress={() => {
+            navigation.navigate("SignUp");
+          }}
         >
           <Text style={styles.text}>Sign Up</Text>
         </TouchableOpacity>
-
-        <Text style={styles.footer}> Forgot your password?</Text>
+        <TouchableOpacity>
+          <Text style={styles.footer}> Forgot your password?</Text>
+        </TouchableOpacity>
       </View>
     </KeyboardAvoidingView>
   );

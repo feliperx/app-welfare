@@ -1,5 +1,3 @@
-import React from "react";
-import styled from "styled-components/native";
 import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
@@ -54,7 +52,7 @@ export const styles = StyleSheet.create({
     borderRadius: 14,
   },
   footer: {
-    marginTop: 30,
+    margin: 30,
     color: "#88FDD0",
     textAlign: "center",
     fontWeight: "bold",
