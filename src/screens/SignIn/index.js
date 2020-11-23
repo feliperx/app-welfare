@@ -5,8 +5,6 @@ import {
   Text,
   View,
   Image,
-  StyleSheet,
-  TextInput,
   TouchableOpacity,
   KeyboardAvoidingView,
   Animated,
@@ -28,7 +26,7 @@ export default () => {
       <View style={styles.container}>
         <Input value={email} setValue={setEmail} label="Email"/>
         <Input value={password} setValue={setPassword} label="Senha" />
-        
+
         <TouchableOpacity
           style={styles.buttonLogin}
           onPress={() => {

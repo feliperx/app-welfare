@@ -4,13 +4,14 @@ export const InputBox = styled.View`
   width: 100%;
   align-items: flex-start;
   justify-content: flex-start;
-  margin: 15px 0;
+  margin: 10px 0;
 `
 
 export const Label = styled.Text`
   font-size: 16px;
   margin-left: 20px;
   font-weight: 700;
+  margin-bottom: 10px;
   color: #484848;
 `
 
