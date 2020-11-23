@@ -16,18 +16,7 @@ export const styles = StyleSheet.create({
     borderColor: "#fff",
     margin: 35,
   },
-  header: {
-    height: 60,
-  },
-  input: {
-    height: 60,
-    marginVertical: 8,
-    paddingHorizontal: 15,
-    borderRadius: 14,
-    borderColor: "green",
-    backgroundColor: "#f2f2f2",
-    color: "#333",
-  }, 
+ 
   text:{
       fontSize: 17,
       color: "#fafdfb",
@@ -35,7 +24,7 @@ export const styles = StyleSheet.create({
   buttonLogin: {
     height: 52,
     marginVertical: 8,
-    marginTop: 75,
+
     backgroundColor: "#99E9E6",
     color: "#fafdfb",
     alignItems: "center",

@@ -22,8 +22,8 @@ export default () => {
         <Text style={styles.title}>Instructor Area</Text>
         <View style={styles.containerView}>
           <View style={styles.options}>
-          <Text style={styles.text}> Students</Text>
-          <Text style={styles.text}> Exercises</Text>
+          <Text style={styles.text}>Students</Text>
+          <Text style={styles.text}>Exercises</Text>
           </View>
         </View>
       </View>

@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
+import Input from '../../components/Input'
 import { useNavigation } from "@react-navigation/native";
 import {
   Text,
@@ -14,6 +15,8 @@ import {
 import { styles } from "./styles";
 
 export default () => {
+  const [ email, setEmail ] = useState("")
+  const [ password, setPassword ] = useState("")
   const navigation = useNavigation();
 
   return (
@@ -23,9 +26,9 @@ export default () => {
       </Animated.View>
 
       <View style={styles.container}>
-        <TextInput style={styles.input} placeholder="Email"></TextInput>
-        <TextInput style={styles.input} placeholder="Password"></TextInput>
-
+        <Input value={email} setValue={setEmail} label="Email"/>
+        <Input value={password} setValue={setPassword} label="Senha" />
+        
         <TouchableOpacity
           style={styles.buttonLogin}
           onPress={() => {
