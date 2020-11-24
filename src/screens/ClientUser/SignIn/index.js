@@ -1,7 +1,4 @@
 import React, { useState } from "react";
-
-import Input from '../../components/Input'
-
 import { useNavigation } from "@react-navigation/native";
 import {
   Text,
@@ -12,7 +9,8 @@ import {
   Animated,
 } from "react-native";
 
-import { styles } from "./styles";
+import Input from '../../../components/Input'
+import { styles } from "./style";
 
 export default () => {
   const [ email, setEmail ] = useState("")
@@ -22,7 +20,7 @@ export default () => {
   return (
     <KeyboardAvoidingView style={styles.background}>
       <Animated.View style={styles.containerLogo}>
-        <Image source={require("../../../public/images/logo.png")} />
+        <Image source={require("../../../images/logo.png")} />
       </Animated.View>
 
       <View style={styles.container}>
@@ -32,18 +30,10 @@ export default () => {
         <TouchableOpacity
           style={styles.buttonLogin}
           onPress={() => {
-            navigation.navigate("InstructorArea");
+            navigation.navigate("Training");
           }}
         >
           <Text style={styles.text}>Login</Text>
-        </TouchableOpacity>
-        <TouchableOpacity
-          style={styles.buttonSignUp}
-          onPress={() => {
-            navigation.navigate("SignUp");
-          }}
-        >
-          <Text style={styles.text}>Sign Up</Text>
         </TouchableOpacity>
         <TouchableOpacity>
           <Text style={styles.footer}> Forgot your password?</Text>

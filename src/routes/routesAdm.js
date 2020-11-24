@@ -4,9 +4,9 @@ import { NavigationContainer } from "@react-navigation/native";
 
 const Stack = createStackNavigator();
 
-import SignIn from "./screens/SignIn";
-import SignUp from "./screens/SignUp";
-import InstructorArea from "./screens/AdmUser/InstructorArea";
+import SignIn from "../screens/AdmUser/SignIn";
+import SignUp from "../screens/AdmUser/SignUp";
+import InstructorArea from "../screens/AdmUser/InstructorArea"; 
 
 export default () => (
 
