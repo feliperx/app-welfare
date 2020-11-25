@@ -10,13 +10,16 @@ import {
 } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import { styles } from "./style";
-import MenuBar from "../../../components/MenuBar/menuBarCli";
+import MenuBar from "../../../components/MenuBar/menuBarCli"; 
+import Header from "../../../components/Header"
+
 
 export default () => {
   const navigation = useNavigation();
 
   return (
     <KeyboardAvoidingView style={styles.background}>
+      <Header name="Chico"/>
       <View style={styles.container}>
         <Text style={styles.title}>Your Workout</Text>
         <View style={styles.containerView}>

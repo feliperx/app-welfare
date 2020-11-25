@@ -6,8 +6,6 @@ import MenuBar from "../../../components/MenuBar/menuBarCli"; // Importando o Me
 export default () => {
   return (
     <View style={{ flex: 1}}>
-      <View style={{flex:1}}>
-      </View>
       <MenuBar/>
     </View>
   );

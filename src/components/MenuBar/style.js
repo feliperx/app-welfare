@@ -1,13 +1,14 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet } from "react-native"; 
 
 export const styles = StyleSheet.create({
 
-  menuBar: {
+  menuBar: { 
+    position: "absolute",
+    bottom: 0,
     flexDirection: "row",
     width: "100%",
     height: 70,
     padding: 30,
-    marginBottom: 0,
     alignItems: "center",
     justifyContent: "space-between",
     backgroundColor: "#C5CFDA",
@@ -15,8 +16,14 @@ export const styles = StyleSheet.create({
     borderTopLeftRadius: 20,
     borderTopRightRadius: 20, 
   },
+
   buttonMenuBar: {
-    fontSize: 17,
+    fontSize: 24,
     color: "#fff",
+  }, 
+
+  selectedButton:{
+    fontSize: 24,
+    color: "#99E9E6"
   },
 });
