@@ -34,7 +34,7 @@ export const styles = StyleSheet.create({
   },
   footer: {
     margin: 30,
-    color: "#88FDD0",
+    color: "#C5CFDA",
     textAlign: "center",
     fontWeight: "bold",
   },

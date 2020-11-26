@@ -4,56 +4,74 @@ export const styles = StyleSheet.create({
   background: {
     flex: 1,
     backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  sideBarTop: {
-    marginTop: 38,
-  },
-  text: {
-    fontSize: 17,
-    color: "#333",
+
   },
   container: {
-    flex: 1,
-    margin: 38,
+    flex: 1, 
+    margin: 24, 
+    marginTop: 0,
+    marginBottom: 90, 
+    fontFamily: "Roboto",
+    fontStyle: "normal", 
+    color: "#484848"
+  },
+  containerTop: {
+    flexDirection: "row",
+  }, 
+  containerWeight: {
+    flex:1,
+    alignItems:"center", 
+    justifyContent:"center",
   },
   title: {
-    width: 300, 
+    flex:1,
     marginBottom: 50,
     marginTop: 50,
     textAlign: "left",
-    fontFamily: "Roboto",
-    fontStyle: "normal",
     fontWeight: "bold",
     fontSize: 24,
     lineHeight: 28,
     color: "#484848",
+  }, 
+  boxInputWeight: { 
+    alignItems:"center", 
+    justifyContent:"flex-start",
+    flexDirection: "row",
+    width: "100%",
+    backgroundColor: "#F4F4F4", 
+    borderRadius: 18, 
+    paddingHorizontal: 20,
+  }, 
+  inputWeight: {
+    flex: 1,
+    fontSize: 10, 
+    color: "#484848",
   },
   containerView: {
     flex: 1,
-    alignItems: "stretch",
+    // backgroundColor: "red",
   },
-  options: {
-    flexDirection: "row",
-    justifyContent: "space-between",
-    borderBottomWidth: 10,
-    borderBottomColor: "#88FDD0",
-  },
-  buttom: {
-    width: "100%",
-    height: 70,
-    padding: 30,
-    marginBottom: 0,
+  exercisesView: { 
+    width: 144,
+    height: 114,
+    marginBottom: 10,
     alignItems: "center",
-    justifyContent: "space-between",
-    backgroundColor: "#C5CFDA",
-    color: "#fafdfb",
-    borderRadius: 20,
-
+    justifyContent: "center",
+    borderRadius: 20, 
+    
   },
-  buttonSideBarBottom: {
-    fontSize: 17,
-    color: "#fff",
+  exercise: { 
+    flex: 1, 
+    resizeMode: "center",
+    overflow: "hidden",
+    width: "100%",
+    height: 114,
+    alignItems: "center",
+    justifyContent: "center",
+    borderRadius: 20, 
+
+  }, 
+  nameExercise: {
+    marginTop: 5,
   },
 });
