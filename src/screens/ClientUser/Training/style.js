@@ -1,16 +1,18 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet } from "react-native"; 
+import styled from 'styled-components';
 
 export const styles = StyleSheet.create({
   background: {
     flex: 1,
     backgroundColor: "#fff",
+    
 
   },
   container: {
     flex: 1, 
-    margin: 24, 
+    margin: 38, 
     marginTop: 0,
-    marginBottom: 90, 
+    marginBottom: 10, 
     fontFamily: "Roboto",
     fontStyle: "normal", 
     color: "#484848"
@@ -48,7 +50,10 @@ export const styles = StyleSheet.create({
     color: "#484848",
   },
   containerView: {
-    flex: 1,
+    flex: 1, 
+    flexDirection: "row", 
+    justifyContent:"space-between"
+
     // backgroundColor: "red",
   },
   exercisesView: { 
@@ -63,15 +68,44 @@ export const styles = StyleSheet.create({
   exercise: { 
     flex: 1, 
     resizeMode: "center",
-    overflow: "hidden",
+    overflow: "hidden", 
     width: "100%",
     height: 114,
     alignItems: "center",
     justifyContent: "center",
-    borderRadius: 20, 
+    borderRadius: 32, 
 
   }, 
   nameExercise: {
     marginTop: 5,
+    fontWeight: "bold",
+  }, 
+
+  footer: {
+    marginLeft: 24,
+    marginRight: 24,
+    marginBottom: 90,  
+    flexDirection: "row", 
+    alignItems: "center", 
+    justifyContent: "space-between",
+    height: 50,
+    backgroundColor: "#F4F4F4", 
+    borderRadius: 18, 
+    padding: 19,
+    fontSize: 12, 
+    fontFamily: "Roboto",
+    fontStyle: "normal", 
+    color: "#484848"
+  },  
+  footerText: { 
+    fontWeight: "bold",
+
+  }, 
+
+  footerTotalTime: { 
+    color: "#C4C4C4", 
+    alignItems: "flex-end"
+
   },
+
 });
