@@ -15,13 +15,14 @@ import MenuBar from "../../../components/MenuBar/menuBarCli";
 import Header from "../../../components/Header";
 import { Ionicons, AntDesign } from "@expo/vector-icons";
 import { LinearGradient } from "expo-linear-gradient";
+import perfil from "../../../images/perfil.png";
 
 export default () => {
   const navigation = useNavigation();
 
   return (
     <KeyboardAvoidingView style={styles.background}>
-      <Header name="Chico" />
+      <Header name="Robert Fox" avatar={perfil} />
       <View style={styles.container}>
         <View style={styles.containerTop}>
           <Text style={styles.title}>Your{"\n"}Workouts</Text>
@@ -43,7 +44,6 @@ export default () => {
               style={styles.exercise}
             >
               <LinearGradient
-                // Background Linear Gradient
                 colors={["rgba(136, 253, 208, 0.7)", "transparent"]}
                 style={{
                   position: "absolute",
@@ -65,14 +65,13 @@ export default () => {
 
             <Text style={styles.nameExercise}>Bike</Text>
           </View>
-          
+
           <View style={styles.exercisesView}>
             <ImageBackground
               source={require("../../../images/squat2.jpg")}
               style={styles.exercise}
             >
               <LinearGradient
-                // Background Linear Gradient
                 colors={["rgba(136, 253, 208, 0.7)", "transparent"]}
                 style={{
                   position: "absolute",

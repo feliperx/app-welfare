@@ -3,8 +3,6 @@ import {
   ImageBackground,
 } from "react-native"; 
 import { StyleSheet } from "react-native";
-import styled from "styled-components"; 
-import { Ionicons, AntDesign } from "@expo/vector-icons";
 import { LinearGradient } from "expo-linear-gradient";
 
 export function BackgroundExercise({image}) {
@@ -40,11 +38,11 @@ export const styles = StyleSheet.create({
     marginBottom: 10,
     fontFamily: "Roboto",
     fontStyle: "normal",
-    color: "#484848",
+    color: "#484848", 
   },
   containerTop: {
     flexDirection: "row",
-  },
+  }, 
   containerWeight: {
     flex: 1,
     alignItems: "center",
@@ -79,7 +77,6 @@ export const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-between",
 
-    // backgroundColor: "red",
   },
   exercisesView: {
     width: 144,
@@ -101,7 +98,8 @@ export const styles = StyleSheet.create({
   },
   nameExercise: {
     marginTop: 5,
-    fontWeight: "bold",
+    fontWeight: "bold", 
+    color: "#484848",
   },
 
   footer: {
@@ -127,5 +125,61 @@ export const styles = StyleSheet.create({
   footerTotalTime: {
     color: "#C4C4C4",
     alignItems: "flex-end",
+  }, 
+  containerTopExercise: { 
+    flex:1,
+    marginTop:58, 
+    
+  }, 
+
+  titleExercise: { 
+
+    marginTop: 45, 
+    fontSize: 24, 
+    color: "#fff", 
+    fontWeight: "bold",
+
+  }, 
+
+  totalTimeExercise: {
+    height: 38, 
+    width: 125,
+    backgroundColor: "#F4F4F4", 
+    marginTop: 45, 
+    borderRadius: 18, 
+    textAlign: "center", 
+    padding: 6, 
+    fontSize: 18,
+
+
   },
+
+  chronometerContainer: {
+    height: 163, 
+    width: "100%", 
+    marginBottom: 45,
+    backgroundColor: "#F4F4F4", 
+    borderRadius: 24, 
+    padding: 10,  
+    alignItems: "center", 
+    justifyContent: "center", 
+  }, 
+
+  timeCurrent: {
+    marginVertical: 25, 
+    fontSize: 24,
+
+  },
+
+  buttomStart: { 
+    marginBottom: 10,
+    width: 70, 
+    height: 70, 
+    alignItems: "center", 
+    justifyContent: "center", 
+    borderRadius: 24,
+    borderColor: "#99E9E6", 
+    borderStyle: "solid", 
+    borderWidth: 1,
+  }
 });

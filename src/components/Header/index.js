@@ -9,7 +9,7 @@ export default function MainHeader({ avatar, name}) {
   return (
       <Header>
         <Name>{name}</Name>
-        <Image source={{ uri: avatar }}></Image>
+        <Image source={avatar}></Image>
       </Header>
   );
 };
