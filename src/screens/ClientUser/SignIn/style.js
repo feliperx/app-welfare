@@ -21,6 +21,14 @@ export const styles = StyleSheet.create({
   text:{
       fontSize: 17,
       color: "#fafdfb",
+  }, 
+  textBlack: {
+    fontSize: 15, 
+    marginBottom: 30, 
+    color: "#484848", 
+    textAlign: "center", 
+    fontWeight: "bold",
+
   },
   buttonLogin: {
     height: 52,
@@ -37,5 +45,10 @@ export const styles = StyleSheet.create({
     color: "#C5CFDA",
     textAlign: "center",
     fontWeight: "bold",
-  },
+  }, 
+  icon:{ 
+    marginBottom: 30,  
+    textAlign: "center", 
+    fontWeight: "bold",
+  }
 });

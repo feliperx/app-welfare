@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Text,
   TextInput,
@@ -10,7 +10,7 @@ import {
 } from "react-native";
 
 import { useNavigation } from "@react-navigation/native";
-import { styles, BackgroundLinearGradient } from "./style";
+import { styles } from "./style";
 import MenuBar from "../../../components/MenuBar/menuBarCli";
 import Header from "../../../components/Header";
 import { Ionicons, AntDesign } from "@expo/vector-icons";
@@ -29,26 +29,30 @@ export default () => {
             <View style={styles.boxInputWeight}>
               <TextInput
                 style={styles.inputWeight}
-                placeholder="Your weight today?" 
+                placeholder="Your weight today?"
               />
               <Ionicons name="md-fitness" size={14} color="#C4C4C4" />
             </View>
           </View>
         </View>
+
         <View style={styles.containerView}>
           <View style={styles.exercisesView}>
             <ImageBackground
               source={require("../../../images/bike.png")}
               style={styles.exercise}
             >
-              {/* <LinearGradient
+              <LinearGradient
                 // Background Linear Gradient
-                colors={[
-                  "rgba(136, 253, 208, 0.7)",
-                  "rgba(136, 253, 208, 0.7)",
-                ]}
-                
-              /> */}
+                colors={["rgba(136, 253, 208, 0.7)", "transparent"]}
+                style={{
+                  position: "absolute",
+                  left: 0,
+                  right: 0,
+                  top: 0,
+                  height: 300,
+                }}
+              />
 
               <TouchableOpacity
                 onPress={() => {
@@ -61,11 +65,23 @@ export default () => {
 
             <Text style={styles.nameExercise}>Bike</Text>
           </View>
+          
           <View style={styles.exercisesView}>
             <ImageBackground
               source={require("../../../images/squat2.jpg")}
               style={styles.exercise}
             >
+              <LinearGradient
+                // Background Linear Gradient
+                colors={["rgba(136, 253, 208, 0.7)", "transparent"]}
+                style={{
+                  position: "absolute",
+                  left: 0,
+                  right: 0,
+                  top: 0,
+                  height: 300,
+                }}
+              />
               <TouchableOpacity
                 onPress={() => {
                   navigation.navigate("Exercise");

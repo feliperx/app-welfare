@@ -5,6 +5,7 @@ import { NavigationContainer } from "@react-navigation/native";
 const Stack = createStackNavigator();
 
 import SignIn from "../screens/ClientUser/SignIn";
+import ForgotPassword from "../screens/ClientUser/SignIn/forgotPassword";
 import Training from "../screens/ClientUser/Training";
 import Exercise from "../screens/ClientUser/Training/exercise";
 import Chats from "../screens/ClientUser/Chats";
@@ -18,6 +19,7 @@ export default () => (
       }}
     >
       <Stack.Screen name="SignIn" component={SignIn} />
+      <Stack.Screen name="ForgotPassword" component={ForgotPassword} />
       <Stack.Screen name="Chats" component={Chats} />
       <Stack.Screen name="PerformanceGraph" component={PerformanceGraph} />
       <Stack.Screen name="Training" component={Training} />

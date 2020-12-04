@@ -3,44 +3,33 @@ import { useNavigation } from "@react-navigation/native";
 import {
   Text,
   View,
-  Image,
   TouchableOpacity,
   KeyboardAvoidingView,
-  Animated,
-} from "react-native";
+} from "react-native"; 
 
 import Input from '../../../components/Input'
 import { styles } from "./style";
+import { FontAwesome5 } from '@expo/vector-icons'; 
 
 export default () => {
   const [ email, setEmail ] = useState("")
-  const [ password, setPassword ] = useState("")
   const navigation = useNavigation();
 
   return (
     <KeyboardAvoidingView style={styles.background}>
-      <Animated.View style={styles.containerLogo}>
-        <Image source={require("../../../images/logo.png")} />
-      </Animated.View>
-
-      <View style={styles.container}>
+      <View style={styles.container}> 
+        <FontAwesome5 name="lock" size={34} color="black" style={styles.icon}/>
+        <Text style={styles.textBlack}>
+            Enter your email adress and we'll send you a link to reset your password.</Text>
         <Input value={email} setValue={setEmail} label="Email"/>
-        <Input value={password} setValue={setPassword} label="Senha" />
 
         <TouchableOpacity
           style={styles.buttonLogin}
           onPress={() => {
-            navigation.navigate("Training");
+            alert("Successfully")
           }}
         >
-          <Text style={styles.text}>Login</Text>
-        </TouchableOpacity>
-        <TouchableOpacity
-          onPress={() => {
-            navigation.navigate("ForgotPassword");
-          }}
-        >
-          <Text style={styles.footer}> Forgot your password?</Text>
+          <Text style={styles.text}>Send</Text>
         </TouchableOpacity>
       </View>
     </KeyboardAvoidingView>
