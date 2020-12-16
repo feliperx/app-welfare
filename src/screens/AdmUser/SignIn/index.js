@@ -32,7 +32,7 @@ export default () => {
         <TouchableOpacity
           style={styles.buttonLogin}
           onPress={() => {
-            navigation.navigate("InstructorArea");
+            navigation.navigate("Trainings");
           }}
         >
           <Text style={styles.text}>Login</Text>
@@ -45,7 +45,11 @@ export default () => {
         >
           <Text style={styles.text}>Sign Up</Text>
         </TouchableOpacity>
-        <TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => {
+            navigation.navigate("ForgotPassword")
+          }}
+          >
           <Text style={styles.footer}> Forgot your password?</Text>
         </TouchableOpacity>
       </View>

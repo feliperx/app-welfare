@@ -1,14 +1,22 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import { Text, View, TouchableOpacity } from "react-native"; 
 import {useNavigation} from "@react-navigation/native"; 
 import { MaterialCommunityIcons, MaterialIcons } from '@expo/vector-icons'; 
+
 
 import { styles } from "./style"; 
 
 
 export default () => { 
 
-    const navigation = useNavigation();
+    const navigation = useNavigation(); 
+
+    const [isActive, setIsActive] = useState(false) 
+
+  useEffect(() => { 
+
+
+  }, [isActive])
 
   return (
     <View style={styles.menuBar}>
@@ -18,7 +26,7 @@ export default () => {
         }}
       >
         <MaterialCommunityIcons name="run" style={styles.buttonMenuBar}/>
-      </TouchableOpacity>
+      </TouchableOpacity> 
       <TouchableOpacity
         onPress={() => { 
           navigation.navigate("PerformanceGraph");
@@ -28,14 +36,14 @@ export default () => {
       </TouchableOpacity>
       <TouchableOpacity
         onPress={() => {
-          navigation.navigate("Chats");
+          navigation.navigate("Chats") 
         }}
       >
         <MaterialIcons name="chat" style={styles.buttonMenuBar} />
       </TouchableOpacity>
       <TouchableOpacity
         onPress={() => {
-          navigation.navigate("SignIn");
+          navigation.navigate("SignInCli");
         }}
       >
         <MaterialIcons name="exit-to-app" style={styles.buttonMenuBar} />

@@ -7,11 +7,18 @@ import {
   TouchableOpacity,
   KeyboardAvoidingView,
   Animated,
-} from "react-native";
+} from "react-native";  
+import { useNavigation } from "@react-navigation/native";
+import {Ionicons} from "@expo/vector-icons"
 
 import { styles } from "./style";
+import MenuBarAdm from "../../../components/MenuBar/menuBarAdm"
 
 export default () => {
+
+  const navigation = useNavigation();
+
+
   return (
     <KeyboardAvoidingView style={styles.background}>
       <View style={styles.sideBarTop}>
@@ -19,7 +26,24 @@ export default () => {
       </View>
 
       <View style={styles.container}>
-        <Text style={styles.title}>Instructor Area</Text>
+        <Text style={styles.title}>Instructor Area</Text> 
+        <TouchableOpacity
+              onPress={() => {
+                navigation.navigate("AddStudent")
+              }}
+            > 
+              <Text>Add Student</Text>
+              <Ionicons name="ios-add-circle" size={24} color="black" />
+        </TouchableOpacity> 
+        <TouchableOpacity
+              onPress={() => {
+                navigation.navigate("AddExercise")
+              }}
+            > 
+              <Text>Add Exercise</Text>
+              <Ionicons name="ios-add-circle" size={24} color="black" />
+        </TouchableOpacity>
+
         <View style={styles.containerView}>
           <View style={styles.options}>
           <Text style={styles.text}>Students</Text>
@@ -27,24 +51,8 @@ export default () => {
           </View>
         </View>
       </View>
-
-      <View style={styles.sideBarBottom}>
-        <TouchableOpacity>
-          <Text style={styles.buttonSideBarBottom}>A</Text>
-        </TouchableOpacity>
-        <TouchableOpacity>
-          <Text style={styles.buttonSideBarBottom}>B</Text>
-        </TouchableOpacity>
-        <TouchableOpacity>
-          <Text style={styles.buttonSideBarBottom}>C</Text>
-        </TouchableOpacity>
-        <TouchableOpacity>
-          <Text style={styles.buttonSideBarBottom}>D</Text>
-        </TouchableOpacity>
-        <TouchableOpacity>
-          <Text style={styles.buttonSideBarBottom}>E</Text>
-        </TouchableOpacity>
-      </View>
+      <MenuBarAdm/>
+      
     </KeyboardAvoidingView>
   );
 };
