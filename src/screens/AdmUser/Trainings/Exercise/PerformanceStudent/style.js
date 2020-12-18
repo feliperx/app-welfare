@@ -100,4 +100,16 @@ export const TextDescription = styled.Text`
   color: #C4C4C4;
 `
 
+export const Tag = styled.View`
+  border-radius: 24px;
+  padding: 6px 12px;
+  background-color: #99E9E6;
+  margin-bottom: 10px;
+`
 
+export const TagText = styled.Text`
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  color: #FFFFFF;
+`

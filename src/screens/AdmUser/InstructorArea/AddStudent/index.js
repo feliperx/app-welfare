@@ -22,7 +22,7 @@ export default function PerformanceStudent({ navigation }) {
   const [ height, setHeight ] = useState("")
 
   function goBack() {
-    navigation.navigate("ExerciseGroup")
+    navigation.navigate("InstructorArea")
   }
 
   function addStudant() {
@@ -39,7 +39,7 @@ export default function PerformanceStudent({ navigation }) {
         </Space>
         
         <TitleContainer>
-          <Title>Adicionar Estudante</Title>
+          <Title>Adicionar Aluno</Title>
         </TitleContainer>
 
         <Input value={name} setValue={setName} label="Nome"/>
@@ -52,7 +52,9 @@ export default function PerformanceStudent({ navigation }) {
 
         <Input keyboardType="numeric" value={height} setValue={setHeight} label="Altura"/>
 
-        <Button onPress={addStudant} text="Registrar" />
+        <Button onPress={() => {
+          navigation.navigate("AddStudentContinous")
+        }} text="Registrar" />
     
       </Container>
     </Background>

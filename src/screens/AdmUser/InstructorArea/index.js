@@ -3,15 +3,12 @@ import {
   Text,
   View,
   Image,
-  TextInput,
   TouchableOpacity,
   KeyboardAvoidingView,
-  Animated,
   ScrollView,
 } from "react-native";  
 import { useNavigation } from "@react-navigation/native";
 import {Ionicons} from "@expo/vector-icons"
-
 import { styles } from "./style";
 import MenuBarAdm from "../../../components/MenuBar/menuBarAdm" 
 import ContainerTraining from "../Trainings/components/containerTrainings";
@@ -31,7 +28,7 @@ export default () => {
       <Header name="Cameron Williamson" avatar={perfil} />
 
       <View style={styles.container}>
-        <Text style={styles.title}>Instructor Area</Text>
+        <Text style={styles.title}>Area do Instrutor</Text>
         <View style={styles.containerView}>
           <View style={styles.options}>
             <TouchableOpacity onPress={() => setSelected(0)}>
@@ -42,7 +39,7 @@ export default () => {
                   selected === 0 ? styles.optionSelected : null,
                 ]}
               >
-                Students
+                Alunos
               </Text>
             </TouchableOpacity>
             <TouchableOpacity onPress={() => setSelected(1)}>
@@ -53,7 +50,7 @@ export default () => {
                   selected === 1 ? styles.optionSelected : null,
                 ]}
               >
-                Exercises
+                Exercicios
               </Text>
             </TouchableOpacity>
           </View>
@@ -65,7 +62,7 @@ export default () => {
                   navigation.navigate("AddStudent");
                 }}
               >
-                <Text>Add Student</Text>
+                <Text>Add Aluno</Text>
                 <Ionicons
                   style={{ paddingLeft: 6 }}
                   name="ios-add-circle"
@@ -81,7 +78,7 @@ export default () => {
                     height={50}
                     style={{ borderRadius: 10 }}
                   />
-                  <Text style={styles.text}>Albert</Text>
+                  <Text style={styles.text}>Jose</Text>
                 </View>
                 <View style={styles.card}>
                   <Image
@@ -90,7 +87,7 @@ export default () => {
                     height={50}
                     style={{ borderRadius: 10 }}
                   />
-                  <Text style={styles.text}>Albert</Text>
+                  <Text style={styles.text}>Marlon</Text>
                 </View>
               </View>
               <View style={styles.containerOptions}>
@@ -101,7 +98,7 @@ export default () => {
                     height={50}
                     style={{ borderRadius: 10 }}
                   />
-                  <Text style={styles.text}>Albert</Text>
+                  <Text style={styles.text}>Felipe</Text>
                 </View>
                 <View style={styles.card}>
                   <Image
@@ -110,7 +107,7 @@ export default () => {
                     height={50}
                     style={{ borderRadius: 10 }}
                   />
-                  <Text style={styles.text}>Albert</Text>
+                  <Text style={styles.text}>Leandro</Text>
                 </View>
               </View>
             </View>
@@ -122,7 +119,7 @@ export default () => {
                   navigation.navigate("AddExercise");
                 }}
               >
-                <Text>Add Exercise</Text>
+                <Text>Add Exercicio</Text>
                 <Ionicons
                   style={{ paddingLeft: 6 }}
                   name="ios-add-circle"
@@ -133,20 +130,16 @@ export default () => {
               <ScrollView showsVerticalScrollIndicator={false}>
                 <View >
                   <ContainerTraining
-                    title={"Runners Group"}
                     nameExercise={"Bike"}
                     image={require("../../../images/bike.png")}
                     nameExercise2={"Squat"}
                     image2={require("../../../images/squat.jpg")}
                   />
 
-                  <ContainerTraining
-                    title={"Jacob Jones"}
-                    nameExercise2={"Squat"}
-                    image2={require("../../../images/squat2.jpg")}
-                    nameExercise={"Bike"}
-                    image={require("../../../images/bike.png")}
-                  />
+                  <ContainerTraining 
+                        nameExercise={"Rope"} image={require("../../../images/rope.jpeg")}
+                        nameExercise2={"Bench Press"} image2={require("../../../images/bench-press.jpeg")}
+                        /> 
                 </View>
               </ScrollView>
             </View>

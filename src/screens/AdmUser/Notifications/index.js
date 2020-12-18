@@ -45,7 +45,7 @@ export default function ComponentInstructorList() {
   return ( 
     <View style={{flex:1}}>
     <Container>
-      <Header avatar={perfil} name="Robert Fox" />
+      <Header avatar={perfil} name="Cameron Willianson" />
 
       <TitleContainer>
         <Title>Notificações</Title>
@@ -57,7 +57,7 @@ export default function ComponentInstructorList() {
 
       <InstructorList>
         {instructors.map(item => (
-          <ButtonBox activeOpacity={0.8} key={item.name} onPress={() => goToConversation(item)}>
+          <ButtonBox activeOpacity={0.8} key={item.name}>
             <FlexStart>
               <Image source={item.avatar} />
               <TextContainer>

@@ -1,4 +1,38 @@
-import styled from 'styled-components'
+import styled from 'styled-components' 
+import {StyleSheet} from "react-native" 
+
+export const styles = StyleSheet.create({
+  background: {
+    flex: 1,
+    backgroundColor: "#fff",
+  },
+  containerLogo: {
+    flex: 1, 
+    alignItems: "center",
+    justifyContent: "flex-end",
+    marginBottom: 20, 
+  }, 
+
+  text: {
+    fontSize: 24, 
+    fontWeight: "bold", 
+    color: "#484848", 
+    fontFamily: "Roboto", 
+    textAlign: "center",
+
+  },
+
+  containerBottom: { 
+    height: 300,
+  },
+  
+  footer: { 
+    margin: 10,
+    color: "#88FDD0",
+    textAlign: "center",
+    fontWeight: "bold",
+  },
+})
 
 export const Space = styled.SafeAreaView`
   flex: ${props => props.flex};

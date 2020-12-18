@@ -26,7 +26,7 @@ export default function PerformanceStudent({ navigation }) {
   const [trainingMeasured, setTrainingMeasured] = React.useState('first');
 
   function goBack() {
-    navigation.navigate("ExerciseGroup")
+    navigation.navigate("Trainings")
   }
 
   function addStudant() {
@@ -97,7 +97,9 @@ export default function PerformanceStudent({ navigation }) {
           </Tag>
         </TagsBox>
 
-        <Button onPress={addStudant} text="Registrar" />
+        <Button onPress={() => {
+          navigation.navigate("AddSucessTrain")
+        }} text="Registrar" />
     
       </Container>
  

@@ -21,7 +21,6 @@ import { AntDesign } from '@expo/vector-icons';
 import perfil from '../../../../../images/perfil.png'
 import background from '../../../../../images/Main.png'
 import grafico from '../../../../../images/grafico.png'
-
 import Header from "../../../../../components/Header";
 
 export default function PerformanceStudent({ navigation }) {
@@ -38,7 +37,7 @@ export default function PerformanceStudent({ navigation }) {
         <Space flex={1}>
           <AntDesign onPress={goBack} name="close" size={24} color="black" />
         </Space>
-        <Header avatar={perfil} name="Robert Fox" />
+        <Header avatar={perfil} name="Cameron Willianson" />
 
         <TitleContainer>
           <Title>Darrell Steward</Title>

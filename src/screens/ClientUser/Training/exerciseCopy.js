@@ -68,7 +68,7 @@ export default () => {
             >
               <Ionicons name="md-arrow-back" size={24} color="white" />
             </TouchableOpacity>
-            <Text style={styles.titleExercise}>Squat</Text>
+            <Text style={styles.titleExercise}>Agachamento</Text>
             <View>
               <Text style={styles.totalTimeExercise}>10:00min</Text>
             </View>

@@ -17,9 +17,12 @@ import SignInAdm from "../screens/AdmUser/SignIn";
 import SignUp from "../screens/AdmUser/SignUp"; 
 import Trainings from "../screens/AdmUser/Trainings";
 import AddTraining from "../screens/AdmUser/Trainings/AddTraining";
+import AddSucessTrain from "../screens/AdmUser/Trainings/AddTraining/addSucess";
 import InstructorArea from "../screens/AdmUser/InstructorArea"; 
 import AddStudent from "../screens/AdmUser/InstructorArea/AddStudent";
+import AddStudentContinous from "../screens/AdmUser/InstructorArea/AddStudent/continous";
 import AddExercise from "../screens/AdmUser/InstructorArea/AddExercise"; 
+import AddExerciseContinous from "../screens/AdmUser/InstructorArea/AddExercise/continous"; 
 import ExerciseGroup from "../screens/AdmUser/Trainings/Exercise"; 
 import PerformanceStudent from "../screens/AdmUser/Trainings/Exercise/PerformanceStudent"; 
 import Notifications from "../screens/AdmUser/Notifications"; 
@@ -54,9 +57,12 @@ export default () => (
       <Stack.Screen name="SignUp" component={SignUp} />
       <Stack.Screen name="Trainings" component={Trainings} />
       <Stack.Screen name="AddTraining" component={AddTraining} />
+      <Stack.Screen name="AddSucessTrain" component={AddSucessTrain} />
       <Stack.Screen name="InstructorArea" component={InstructorArea} />
       <Stack.Screen name="AddStudent" component={AddStudent} />
+      <Stack.Screen name="AddStudentContinous" component={AddStudentContinous} />
       <Stack.Screen name="AddExercise" component={AddExercise} />
+      <Stack.Screen name="AddExerciseContinous" component={AddExerciseContinous} />
       <Stack.Screen name="ExerciseGroup" component={ExerciseGroup} />
       <Stack.Screen name="PerformanceStudent" component={PerformanceStudent} />
       <Stack.Screen name="Notifications" component={Notifications} />

@@ -25,12 +25,12 @@ export default () => {
       <Header name="Robert Fox" avatar={perfil} />
       <View style={styles.container}>
         <View style={styles.containerTop}>
-          <Text style={styles.title}>Your{"\n"}Workouts</Text>
+          <Text style={styles.title}>Meu{"\n"}Treino</Text>
           <View style={styles.containerWeight}>
             <View style={styles.boxInputWeight}>
               <TextInput
                 style={styles.inputWeight}
-                placeholder="Your weight today?"
+                placeholder="Qual seu peso hoje?"
               />
               <Ionicons name="md-fitness" size={14} color="#C4C4C4" />
             </View>
@@ -63,7 +63,7 @@ export default () => {
               </TouchableOpacity>
             </ImageBackground>
 
-            <Text style={styles.nameExercise}>Bike</Text>
+            <Text style={styles.nameExercise}>Bicicleta</Text>
           </View>
 
           <View style={styles.exercisesView}>
@@ -90,17 +90,17 @@ export default () => {
               </TouchableOpacity>
             </ImageBackground>
 
-            <Text style={styles.nameExercise}>Squat</Text>
+            <Text style={styles.nameExercise}>Agachamento</Text>
           </View>
         </View>
       </View>
 
       <View style={styles.footer}>
         <View>
-          <Text style={styles.footerText}>Activity during the day</Text>
+          <Text style={styles.footerText}>Atividade durante o dia</Text>
         </View>
         <View>
-          <Text style={styles.footerTotalTime}>1h and 30m</Text>
+          <Text style={styles.footerTotalTime}>1h e 30m</Text>
         </View>
       </View>
 

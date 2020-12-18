@@ -28,7 +28,7 @@ export default () => {
             navigation.navigate("SignInAdm");
           }}
         >
-          <Text style={styles.text}>Instructor</Text>
+          <Text style={styles.text}>Instrutor</Text>
         </TouchableOpacity>
         <TouchableOpacity
           style={styles.buttonLogin}
@@ -36,7 +36,7 @@ export default () => {
             navigation.navigate("SignInCli");
           }}
         >
-          <Text style={styles.text}>Student</Text>
+          <Text style={styles.text}>Aluno</Text>
         </TouchableOpacity>
       </View>
     </KeyboardAvoidingView>

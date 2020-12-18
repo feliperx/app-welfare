@@ -10,18 +10,18 @@ export default () => {
 
     const navigation = useNavigation(); 
 
-    const [isActive, setIsActive] = useState(false) 
+    const [selected, setSelected] = useState(0); 
 
-  useEffect(() => { 
+    useEffect(() => {
 
-
-  }, [isActive])
+    }, [selected]);
 
   return (
     <View style={styles.menuBar}>
       <TouchableOpacity 
           onPress={() => { 
-            navigation.navigate("Trainings");
+            setSelected(1)
+            navigation.navigate("Trainings") 
         }}
       >
         <MaterialCommunityIcons name="run" style={styles.buttonMenuBar}/>
@@ -29,14 +29,16 @@ export default () => {
 
       <TouchableOpacity 
           onPress={() => { 
-            navigation.navigate("InstructorArea");
+            setSelected(2)
+            navigation.navigate("InstructorArea")
         }}
       >
         <FontAwesome name="users" style={styles.buttonMenuBar} />      
         </TouchableOpacity>
       <TouchableOpacity
         onPress={() => { 
-          navigation.navigate("Notifications");
+          setSelected(3)
+          navigation.navigate("Notifications")
         }}
       > 
         <MaterialCommunityIcons name="bell" style={styles.buttonMenuBar} />
@@ -44,6 +46,7 @@ export default () => {
 
       <TouchableOpacity
         onPress={() => {
+          setSelected(4)
           navigation.navigate("ChatsAdm") 
         }}
       >

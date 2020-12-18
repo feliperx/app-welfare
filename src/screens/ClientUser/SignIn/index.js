@@ -40,7 +40,7 @@ export default () => {
             navigation.navigate("ForgotPassword");
           }}
         >
-          <Text style={styles.footer}> Forgot your password?</Text>
+          <Text style={styles.footer}> Esquece sua senha?</Text>
         </TouchableOpacity>
       </View>
     </KeyboardAvoidingView>

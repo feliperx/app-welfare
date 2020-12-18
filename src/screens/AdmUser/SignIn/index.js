@@ -37,20 +37,20 @@ export default () => {
         >
           <Text style={styles.text}>Login</Text>
         </TouchableOpacity>
-        <TouchableOpacity
+        {/* <TouchableOpacity
           style={styles.buttonSignUp}
           onPress={() => {
             navigation.navigate("SignUp");
           }}
         >
           <Text style={styles.text}>Sign Up</Text>
-        </TouchableOpacity>
+        </TouchableOpacity> */}
         <TouchableOpacity
           onPress={() => {
             navigation.navigate("ForgotPassword")
           }}
           >
-          <Text style={styles.footer}> Forgot your password?</Text>
+          <Text style={styles.footer}> Esqueceu sua senha?</Text>
         </TouchableOpacity>
       </View>
     </KeyboardAvoidingView>

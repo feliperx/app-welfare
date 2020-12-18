@@ -23,10 +23,6 @@ export default () => {
     setIsActive(false);
   } 
 
-  function minutes(seconds) {
-    minutes = seconds / 60; 
-  }
-
   useEffect(() => {
     let interval = null;
     if (isActive) {
@@ -68,7 +64,7 @@ export default () => {
             >
               <Ionicons name="md-arrow-back" size={24} color="white" />
             </TouchableOpacity>
-            <Text style={styles.titleExercise}>Bike</Text>
+            <Text style={styles.titleExercise}>Bicicleta</Text>
             <View>
               <Text style={styles.totalTimeExercise}>20:00min</Text>
             </View>

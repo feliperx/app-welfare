@@ -10,18 +10,16 @@ import {
 } from './style'
 
 import { AntDesign } from '@expo/vector-icons'; 
-
 import background from '../../../../images/Main.png'
-
 import Input from "../../../../components/Input";
 import Button from "../../../../components/Button";
 
-export default function PerformanceStudent({ navigation }) {
+export default function AddExercise({ navigation }) {
   const [ name, setName ] = useState("")
   const [ video, setVideo ] = useState("")
 
   function goBack() {
-    navigation.navigate("ExerciseGroup")
+    navigation.navigate("InstructorArea")
   }
 
   function addExercise() {
@@ -49,7 +47,9 @@ export default function PerformanceStudent({ navigation }) {
             <AntDesign name="plus" size={24} color="white" />
         </VideoBox>
 
-        <Button onPress={addExercise} text="Registrar" />
+        <Button onPress={() => {
+          navigation.navigate("AddExerciseContinous")
+        }} text="Registrar" />
     
       </Container>
     </Background>

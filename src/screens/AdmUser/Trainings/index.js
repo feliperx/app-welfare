@@ -21,10 +21,10 @@ export default () => {
 
   return (
     <KeyboardAvoidingView style={styles.background}>
-      <Header name="Cameron Williamson" avatar={perfil} />
+      <Header name="Cameron Willianson" avatar={perfil} />
       <View style={styles.container}>
         <View style={styles.containerTop}>
-          <Text style={styles.title}>Trainings</Text>
+          <Text style={styles.title}>Treinos</Text>
           <View style={styles.containerAdd}> 
             <Text style={{color: "#C4C4C4", fontWeight: "bold"}}>Add</Text>
             <TouchableOpacity
@@ -40,15 +40,15 @@ export default () => {
 
         
       <ContainerTraining 
-      title={"Runners Group"} 
-      nameExercise={"Bike"} image={require("../../../images/bike.png")}
-      nameExercise2={"Squat"} image2={require("../../../images/squat.jpg")}
+      title={"Grupo dos Corredores"} 
+      nameExercise={"Bicicleta"} image={require("../../../images/bike.png")}
+      nameExercise2={"Agachamento"} image2={require("../../../images/squat.jpg")}
       /> 
 
       <ContainerTraining 
-      title={"Jacob Jones"} 
-      nameExercise={"Rope"} image={require("../../../images/rope.jpeg")}
-      nameExercise2={"Bike"} image2={require("../../../images/bike.png")}
+      title={"Jose Pereira"} 
+      nameExercise={"Corda"} image={require("../../../images/rope.jpeg")}
+      nameExercise2={"Bicicleta"} image2={require("../../../images/bike.png")}
       /> 
 
     

@@ -30,7 +30,7 @@ export default function ComponentInstructorList({ instructors, setInstructor }) 
   return ( 
     <View style={{flex:1}}>
     <Container>
-      <Header avatar={perfil} name="Robert Fox" />
+      <Header avatar={perfil} name="Cameron Willianson" />
 
       <TitleContainer>
         <Title>Minhas</Title>

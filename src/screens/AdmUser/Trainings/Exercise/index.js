@@ -12,22 +12,12 @@ export default () => {
   return (
     <View style={{ flex: 1 }}>
       <ImageBackground
-        source={require("../../../../images/rope.jpeg")}
+        source={require("../../../../images/Main.png")}
         style={{
           height: "100%",
           resizeMode: "center",
         }}
       >
-        <LinearGradient
-          colors={["rgba(136, 253, 208, 0.7)", "transparent"]}
-          style={{
-            position: "absolute",
-            left: 0,
-            right: 0,
-            top: 0,
-            height: 300,
-          }}
-        />
         <View style={styles.container}>
           <View style={styles.containerTop}>
             <TouchableOpacity
@@ -39,7 +29,7 @@ export default () => {
             </TouchableOpacity>
               </View>
             <View style={styles.containerStudent}>
-              <Text style={styles.nameStudent}>Jacob Jones</Text>
+              <Text style={styles.nameStudent}>Rebeca Silva</Text>
               <TouchableOpacity
                 onPress={() => {
                   navigation.navigate("PerformanceStudent");
@@ -54,7 +44,7 @@ export default () => {
             </View> 
 
             <View style={styles.containerStudent}>
-              <Text style={styles.nameStudent}>Ronald Richards</Text>
+              <Text style={styles.nameStudent}>Marlon Belo</Text>
               <TouchableOpacity
                 onPress={() => {
                   navigation.navigate("PerformanceStudent");
@@ -69,7 +59,7 @@ export default () => {
             </View> 
 
             <View style={styles.containerStudent}>
-              <Text style={styles.nameStudent}>Leslie Alexander</Text>
+              <Text style={styles.nameStudent}>Vanessa Naveca</Text>
               <TouchableOpacity
                 onPress={() => {
                   navigation.navigate("PerformanceStudent");
