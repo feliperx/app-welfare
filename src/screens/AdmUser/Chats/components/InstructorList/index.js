@@ -38,7 +38,7 @@ export default function ComponentInstructorList({ instructors, setInstructor }) 
       </TitleContainer>
       
       <SubTitleContainer>
-        <SubTitle>Instrutores</SubTitle>
+        <SubTitle>Estudantes</SubTitle>
       </SubTitleContainer>
 
       <InstructorList>
