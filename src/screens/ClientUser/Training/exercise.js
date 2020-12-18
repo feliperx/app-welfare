@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { Text, View, TouchableOpacity } from "react-native";
-import { Ionicons, AntDesign } from "@expo/vector-icons";
+import { Ionicons } from "@expo/vector-icons";
 import { LinearGradient } from "expo-linear-gradient";
 import { ImageBackground } from "react-native";
 import { styles } from "./style";
-import { useNavigation } from "@react-navigation/native";
+import { useNavigation } from "@react-navigation/native"; 
+import TimeFormatter from 'minutes-seconds-milliseconds';
 
 export default () => {
 
@@ -30,8 +31,8 @@ export default () => {
     let interval = null;
     if (isActive) {
       interval = setInterval(() => {
-        setSeconds((seconds) => seconds + 1);
-      }, 1000);
+        setSeconds((seconds) => seconds + 20);
+      }, 1);
     } else if (!isActive && seconds !== 0) {
       clearInterval(interval);
     }
@@ -74,11 +75,12 @@ export default () => {
           </View>
 
           <View style={styles.chronometerContainer}>
-            <Text style={styles.timeCurrent}>{`${seconds}s`}</Text>
+            <Text style={styles.timeCurrent}>{TimeFormatter(seconds)}</Text>
 
             <TouchableOpacity
               style={styles.buttomStart}
-              onPress={toggle}
+              onPress={toggle} 
+              onLongPress={reset}
             >
               <Ionicons name = { isActive ? "ios-pause": "ios-play" } size={24} color="black" />
             </TouchableOpacity>

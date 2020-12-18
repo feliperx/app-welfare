@@ -47,8 +47,8 @@ export default () => {
 
       <ContainerTraining 
       title={"Jacob Jones"} 
-      nameExercise2={"Squat"} image2={require("../../../images/squat2.jpg")}
-      nameExercise={"Bike"} image={require("../../../images/bike.png")}
+      nameExercise={"Rope"} image={require("../../../images/rope.jpeg")}
+      nameExercise2={"Bike"} image2={require("../../../images/bike.png")}
       /> 
 
     

@@ -73,7 +73,6 @@ export const styles = StyleSheet.create({
     color: "#484848",
   },
   containerView: {
-    flex: 1,
     flexDirection: "row",
     justifyContent: "space-between",
 
@@ -87,7 +86,6 @@ export const styles = StyleSheet.create({
     borderRadius: 20,
   },
   exercise: {
-    flex: 1,
     resizeMode: "center",
     overflow: "hidden",
     width: "100%",

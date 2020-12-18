@@ -9,6 +9,7 @@ import SignIn from "../screens/ClientUser/SignIn";
 import ForgotPassword from "../screens/ClientUser/SignIn/forgotPassword";
 import Training from "../screens/ClientUser/Training";
 import Exercise from "../screens/ClientUser/Training/exercise";
+import Exercise2 from "../screens/ClientUser/Training/exerciseCopy";
 import Chats from "../screens/ClientUser/Chats";
 import PerformanceGraph from "../screens/ClientUser/Performance"; 
 
@@ -19,8 +20,8 @@ import AddTraining from "../screens/AdmUser/Trainings/AddTraining";
 import InstructorArea from "../screens/AdmUser/InstructorArea"; 
 import AddStudent from "../screens/AdmUser/InstructorArea/AddStudent";
 import AddExercise from "../screens/AdmUser/InstructorArea/AddExercise"; 
-import ExerciseGroup from "../screens/AdmUser/InstructorArea/Exercise"; 
-import PerformanceStudent from "../screens/AdmUser/InstructorArea/Exercise/PerformanceStudent"; 
+import ExerciseGroup from "../screens/AdmUser/Trainings/Exercise"; 
+import PerformanceStudent from "../screens/AdmUser/Trainings/Exercise/PerformanceStudent"; 
 import Notifications from "../screens/AdmUser/Notifications"; 
 import ChatsAdm from "../screens/AdmUser/Chats" 
 
@@ -45,6 +46,7 @@ export default () => (
       <Stack.Screen name="PerformanceGraph" component={PerformanceGraph} />
       <Stack.Screen name="Training" component={Training} />
       <Stack.Screen name="Exercise" component={Exercise} /> 
+      <Stack.Screen name="Exercise2" component={Exercise2} /> 
 
       
       {/* Adm */}

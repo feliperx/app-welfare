@@ -68,7 +68,7 @@ export default () => {
 
           <View style={styles.exercisesView}>
             <ImageBackground
-              source={require("../../../images/squat2.jpg")}
+              source={require("../../../images/squat.jpg")}
               style={styles.exercise}
             >
               <LinearGradient
@@ -83,7 +83,7 @@ export default () => {
               />
               <TouchableOpacity
                 onPress={() => {
-                  navigation.navigate("Exercise");
+                  navigation.navigate("Exercise2");
                 }}
               >
                 <AntDesign name="play" size={24} color="#fff" />
@@ -100,7 +100,7 @@ export default () => {
           <Text style={styles.footerText}>Activity during the day</Text>
         </View>
         <View>
-          <Text style={styles.footerTotalTime}>2h and 30m</Text>
+          <Text style={styles.footerTotalTime}>1h and 30m</Text>
         </View>
       </View>
 
