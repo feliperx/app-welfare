@@ -31,11 +31,12 @@ export default () => {
           <Text style={styles.text}>Instructor</Text>
         </TouchableOpacity>
         <TouchableOpacity
+          style={styles.buttonLogin}
           onPress={() => {
             navigation.navigate("SignInCli");
           }}
         >
-          <Text style={styles.footer}> Student</Text>
+          <Text style={styles.text}>Student</Text>
         </TouchableOpacity>
       </View>
     </KeyboardAvoidingView>

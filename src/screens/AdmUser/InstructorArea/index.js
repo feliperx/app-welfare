@@ -12,7 +12,11 @@ import { useNavigation } from "@react-navigation/native";
 import {Ionicons} from "@expo/vector-icons"
 
 import { styles } from "./style";
-import MenuBarAdm from "../../../components/MenuBar/menuBarAdm"
+import MenuBarAdm from "../../../components/MenuBar/menuBarAdm" 
+import Header from "../../../components/Header";
+import perfil from "../../../images/perfil.png";
+
+
 
 export default () => {
 
@@ -21,9 +25,7 @@ export default () => {
 
   return (
     <KeyboardAvoidingView style={styles.background}>
-      <View style={styles.sideBarTop}>
-        <Text style={styles.text}> Name</Text>
-      </View>
+      <Header name="Cameron Williamson" avatar={perfil} />
 
       <View style={styles.container}>
         <Text style={styles.title}>Instructor Area</Text> 

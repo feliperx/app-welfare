@@ -1,30 +1,4 @@
-import React from "react";
-import {
-  ImageBackground,
-} from "react-native"; 
 import { StyleSheet } from "react-native";
-import { LinearGradient } from "expo-linear-gradient";
-
-export function BackgroundExercise({image}) {
-  return (
-    <ImageBackground
-      source={image}
-      style={{flex:1, resizeMode: "center", alignItems: "center",
-      justifyContent: "center",}}
-    >
-      <LinearGradient
-        colors={["rgba(136, 253, 208, 0.7)", "transparent"]}
-        style={{
-          position: "absolute",
-          left: 0,
-          right: 0,
-          top: 0,
-          height: 300,
-        }}
-      />
-    </ImageBackground>
-  );
-};
 
 export const styles = StyleSheet.create({
   background: {
@@ -41,36 +15,30 @@ export const styles = StyleSheet.create({
     color: "#484848", 
   },
   containerTop: {
-    flexDirection: "row",
-  }, 
-  containerWeight: {
-    flex: 1,
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  title: {
-    flex: 1,
+    flexDirection: "row", 
     marginBottom: 50,
     marginTop: 50,
+  }, 
+  title: {
+    flex: 1,  
     textAlign: "left",
     fontWeight: "bold",
     fontSize: 24,
     lineHeight: 28,
     color: "#484848",
   },
-  boxInputWeight: {
-    alignItems: "center",
-    justifyContent: "flex-start",
-    flexDirection: "row",
-    width: "100%",
-    backgroundColor: "#F4F4F4",
-    borderRadius: 18,
-    paddingHorizontal: 20,
-  },
-  inputWeight: {
-    flex: 1,
-    fontSize: 10,
-    color: "#484848",
+
+  containerAdd: {
+      flex: 1, 
+      flexDirection: "row",
+      alignItems: "center",
+      justifyContent: "flex-end", 
+    },
+  buttomAdd: {
+    color: "#88FDD0",
+    fontSize: 24, 
+    marginLeft: 7,
+
   },
   containerView: {
     flex: 1,
