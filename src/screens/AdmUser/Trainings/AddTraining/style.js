@@ -39,7 +39,8 @@ export const Space = styled.SafeAreaView`
   width: 100%;
   align-items: flex-end;
   justify-content: flex-end;
-  padding: 12px 30px 0 30px;
+  padding: 12px 30px 0 30px; 
+  margin-top: 30px;
 `
 
 export const Container = styled.ScrollView `
